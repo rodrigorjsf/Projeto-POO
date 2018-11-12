@@ -4,37 +4,35 @@ import java.util.ArrayList;
 
 public class ExercicioComposite extends Exercicio{
 
-	private String nome;
-    private String descricao;
-    private int series;
-    private int repeticoes;
-    private Timer timer;
-    private ArrayList<Exercicio> listaDeExercicios;
+    private ArrayList<ExercicioSimples> listaDeExercicios;
 
     public ExercicioComposite(String nome, String descricao, int series, int repeticoes,int tempoContracao, int tempoDescontracao, int tempoDescanco) {
-        this.nome = nome;
-        this.descricao = descricao;
-        this.series = series;
-        this.repeticoes = repeticoes;
-        this.timer = new Timer(tempoContracao,tempoDescontracao,tempoDescanco);
+        super.setNome(nome);
+        super.setDescricao(descricao);
+        super.setSeries(series);
+        super.setRepeticoes(repeticoes);
+        super.setTimer(tempoContracao,tempoDescontracao,tempoDescanco);
+  
+        //this.timer = new Timer(tempoContracao,tempoDescontracao,tempoDescanco);
     }
 
-    public static void adicionar(Exercicio exerEome) {
+     public Exercicio exibir(int n) {
+    	return exec;
+    }  
+    public void adicionar(ExercicioSimples exerEome) {
     	this.listaDeExercicios.add(exerEome);
     }
     public void alterar(Exercicio exerEome) {
     	
     }
-    public void buscar(String exerEome) {
-
-    }
+    
     public void remover(Exercicio exerEome) {
 
     }
     
     @Override
     public String toString() {
-        return "\nnome=" + nome + "\ndescricao=" + descricao + "\nseries=" + series + "\nrepeticoes=" + repeticoes + "\n";
-    }
+		return "\nnome=" + super.getNome() + "\ndescricao=" + super.getDescricao() + "\nseries=" + super.getSeries() + "\nrepeticoes=" + super.getRepeticoes() + "\n";
+	}
     
 }

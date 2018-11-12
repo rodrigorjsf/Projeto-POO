@@ -2,7 +2,7 @@ package Model;
 
 import java.util.ArrayList;
 
-public class Exercicio {
+public abstract class Exercicio {
     
     private String nome;
     private String descricao;
@@ -12,8 +12,9 @@ public class Exercicio {
     
 
     public Exercicio() {
-
     }
+    
+    public abstract Exercicio exibir();
 
     public String getNome() {
         return nome;
@@ -47,15 +48,18 @@ public class Exercicio {
         this.repeticoes = repeticoes;
     }
 
+    public void setTimer(int tempoContracao, int tempoDescontracao, int tempoDescanco) {
+        timer.setTempoContracao(tempoContracao);
+        timer.setTempoDescontracao(tempoDescontracao);
+        timer.setTempoDescanco(tempoDescanco);
+    }
+    
     public Timer getTimer() {
         return timer;
     }
     
     
-    @Override
-    public String toString() {
-        return "\nnome=" + nome + "\ndescricao=" + descricao + "\nseries=" + series + "\nrepeticoes=" + repeticoes + "\n";
-    }
+
     
     
 }

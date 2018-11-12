@@ -7,7 +7,8 @@ import Model.Professor;
 import java.io.IOException;
 import java.util.Scanner;
 import Model.Exercicio;
-import Model.ExercicioComposite;;
+import Model.ExercicioComposite;
+import Model.ExercicioSimples;
 
 public class FichaView  {
 
@@ -444,7 +445,7 @@ public class FichaView  {
 
     		switch (voto){
     		case 1: {
-    			Exercicio a = new ExercicioComposite("Supino", "Exercicio voltado principalmente para os musculos do peitoral,deltoide e triceps", 2, 2, 2, 2, 5);
+    			Exercicio a = new ExercicioSimples("Supino", "Exercicio voltado principalmente para os musculos do peitoral,deltoide e triceps", 2, 2, 2, 2, 5);
     			ExercicioComposite.adicionar(a);
     			break;
     		} case 2: {

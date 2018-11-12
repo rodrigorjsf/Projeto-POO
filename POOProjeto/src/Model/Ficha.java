@@ -14,13 +14,10 @@ public class Ficha implements Prototype{
     public Ficha(Professor professor, Aluno aluno) {
         this.professor = professor;
         this.aluno = aluno;
-        listaDeExercicios = new ArrayList<>();
-        Exercicio a = new Exercicio("Supino", "Exercicio voltado principalmente para os musculos do peitoral,deltoide e triceps", 2, 2, 2, 2, 5);
+        listaDeExercicios = new ArrayList<>();       
+        /*Exercicio a = new Exercicio("Supino", "Exercicio voltado principalmente para os musculos do peitoral,deltoide e triceps", 2, 2, 2, 2, 5);
         Exercicio b = new Exercicio("Agachamento", "Tambem conhecido com squat,eh um exercicio completo com enfoque nas pernas,costas e barriga", 2, 2, 2, 2, 5);
-        Exercicio c = new Exercicio("Puxada alta", "Exercicio focado em trabalhar a grande dorsal ", 2, 2, 2, 2, 5);
-        listaDeExercicios.add(a);
-        listaDeExercicios.add(b);
-        listaDeExercicios.add(c);
+        Exercicio c = new Exercicio("Puxada alta", "Exercicio focado em trabalhar a grande dorsal ", 2, 2, 2, 2, 5);*/
     }
 
     public void setProfessor(Professor professor) {
