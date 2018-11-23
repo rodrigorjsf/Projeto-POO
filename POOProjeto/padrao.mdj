@@ -695,7 +695,7 @@
 											"top": 487,
 											"width": 175.18896484375,
 											"height": 13,
-											"text": "Exercicios Controller"
+											"text": "Exercicios br.unicap.projeto.controller"
 										},
 										{
 											"_type": "LabelView",
@@ -2490,7 +2490,7 @@
 											"top": 479,
 											"width": 182,
 											"height": 13,
-											"text": "Ficha Controller"
+											"text": "Ficha br.unicap.projeto.controller"
 										},
 										{
 											"_type": "LabelView",
@@ -12198,7 +12198,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Exercicios Controller",
+					"name": "Exercicios br.unicap.projeto.controller",
 					"ownedElements": [
 						{
 							"_type": "UMLDependency",
@@ -13134,7 +13134,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Ficha Controller",
+					"name": "Ficha br.unicap.projeto.controller",
 					"ownedElements": [
 						{
 							"_type": "UMLDependency",
